@@ -19,9 +19,10 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 import { DetailsComponent } from "./components/details.component";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { AuthModule } from "./auth/auth.module";
+import { LikedlistComponent } from "./components/likedlist.component";
 
 @NgModule({
-  declarations: [AppComponent, HomepageComponent, MoviesComponent, UserComponent, DetailsComponent],
+  declarations: [AppComponent, HomepageComponent, MoviesComponent, UserComponent, DetailsComponent, LikedlistComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

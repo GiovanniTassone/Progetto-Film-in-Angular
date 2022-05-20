@@ -5,6 +5,7 @@ import { HomepageComponent } from "./components/homepage.component";
 import { MoviesComponent } from "./components/movies.component";
 import { UserComponent } from "./components/user.component";
 import { AuthGuard } from "./auth/auth.guard";
+import { LikedlistComponent } from "./components/likedlist.component";
 
 const routes: Routes = [
   {
@@ -23,6 +24,10 @@ const routes: Routes = [
       {
         path: "movies/:id",
         component: DetailsComponent,
+      },
+      {
+        path: "likedList",
+        component: LikedlistComponent,
       },
     ],
   },

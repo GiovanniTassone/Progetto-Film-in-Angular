@@ -27,10 +27,10 @@ import { AuthService } from "../auth/auth.service";
           <mat-icon>person_outline</mat-icon>
           <span>Profilo</span>
         </button>
-        <!-- <button mat-button class="menu-button" routerLink="/profile">
+        <button mat-button class="menu-button" routerLink="/likedList">
           <mat-icon>favorite</mat-icon>
           <span>La mia Lista</span>
-        </button> -->
+        </button>
 
         <mat-divider></mat-divider>
 
