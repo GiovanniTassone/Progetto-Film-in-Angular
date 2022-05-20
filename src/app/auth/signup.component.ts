@@ -16,17 +16,17 @@ import { AuthService } from "./auth.service";
           <form #f="ngForm" (ngSubmit)="onFormSubmit(f)">
             <mat-form-field appearance="fill" color="accent">
               <mat-label>Nome</mat-label>
-              <input matInput placeholder="Inserisci il tuo Nome" type="text" ngModel name="name" required />
+              <input matInput pattern="^[a-zA-Z]*$" placeholder="Inserisci il tuo Nome" type="text" ngModel name="name" required />
             </mat-form-field>
 
             <mat-form-field appearance="fill" color="accent">
               <mat-label>Cognome</mat-label>
-              <input matInput placeholder="Inserisci il tuo Cognome" type="text" ngModel name="surname" required />
+              <input matInput pattern="^[a-zA-Z]*$" placeholder="Inserisci il tuo Cognome" type="text" ngModel name="surname" required />
             </mat-form-field>
 
             <mat-form-field appearance="fill" color="accent">
               <mat-label>Email</mat-label>
-              <input matInput placeholder="Inserisci la tua Email" type="email" ngModel name="email" required />
+              <input matInput pattern="[a-zA-Z0-9]+@[a-zA-Z]+.(com|edu|net|it)" placeholder="Inserisci la tua Email" type="email" ngModel name="email" required />
             </mat-form-field>
 
             <mat-form-field appearance="fill" color="accent">
